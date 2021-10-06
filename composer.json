@@ -1,0 +1,13 @@
+{
+    "name": "funfare/laravel-migrations-analyzer",
+    "description": "analyze,change and generate laravel migrations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Funfare",
+            "email": "info@funfare.de"
+        }
+    ],
+    "require": {}
+}
