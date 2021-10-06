@@ -1,0 +1,8 @@
+<?php
+
+namespace Funfare\MigrationAnalyzer\Tests;
+
+class TestCase extends \Orchestra\Testbench\TestCase
+{
+    //
+}

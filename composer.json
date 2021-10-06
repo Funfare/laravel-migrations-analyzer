@@ -9,5 +9,31 @@
             "email": "info@funfare.de"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/support": "^8.63",
+        "illuminate/database": "^8.63",
+        "illuminate/filesystem": "^8.63",
+        "nikic/php-parser": "^4.13"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Funfare\\MigrationAnalyzer\\": "src/",
+            "Funfare\\MigrationAnalyzer\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Funfare\\MigrationAnalyzer\\Providers\\ServiceProvider"
+            ]
+        }
+    }
 }
